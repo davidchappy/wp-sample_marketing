@@ -1,0 +1,180 @@
+/*
+Theme Name: David Chapman Master Theme
+Theme URI: http://wp-master.dachapman.com/
+Author: David Chapman (borrowing from Zac Gordon, Treehouse instructor)
+Author URI: http://portfolio.dachapman.com/
+Description: Master Theme for my client websites.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dac_master
+
+This theme serves as the Master Theme from which I create Child Themes for my clients' websites. Although this theme is in flux as I tweak and improve it with each project, the following are core characterstics:
+-Incorporates Bootstrap for quick builds
+-Responsive, Mobile-First
+-Flexible, Custom page Templates (avoiding WYSWIG as much as possible so user can edit content without fear of breaking anything)
+-Custom post types that are useful for common use cases.
+-An easy-to-use, streamlined site editing experience, incorporating a customized Super Editor user type.
+
+Most or all of the plugins used in this theme are essential for best results—modify at your own risk. 
+
+This theme is licensed under the GPL.
+*/
+
+
+/****** Global Styles ******/
+
+/* Accomodates nav and footer — will change in certain Child themes */
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+/* Responsive images */
+img {
+	max-width: 100%;
+}
+
+/* Provides space at the top for the WP admin bar */
+.admin-bar .navbar-fixed-top {
+	margin-top: 30px;
+}
+
+@media (min-width:768px) {
+	.sub-menu {
+		display: none;
+		position: absolute;
+		background: #222;
+		padding: 10px 15px;
+		width: 200px;		
+	}
+
+	li:hover .sub-menu {
+		display: block;
+	}
+}
+
+.sub-menu li {
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.sub-menu li:last-child {
+	margin-bottom: 0;
+}
+
+.sub-menu a  {
+	color: #999;
+	text-decoration: none;
+}
+
+.sub-menu a:hover  {
+	color: #fff;	
+}	
+
+.current-menu-item > a, .current-menu-parent > a {
+	background: #000;	
+}
+.current-menu-parent li a {
+	background: inherit;
+}
+.current-menu-parent .current-menu-item a {
+	color: #fff;
+	font-weight: bold;
+}
+
+.sidebar {
+	margin-top: 40px;
+	color: #444;
+}
+
+.sidebar h3 {
+	color:#888;
+}
+
+article.post {
+	margin: 20px 0 40px;
+}
+
+.page-id-57 .row {
+	margin-bottom: .5rem;
+}
+
+.prev-next {
+	font-size: 24px;
+	margin-top: 30px;
+	text-align: right;
+}
+
+@media (max-width:540px) {
+	.portfolio-piece h4 {
+		font-size: .8em;	
+	}
+	.prev-next {
+		margin-top: 15px;
+		font-size: 18px;
+	}
+}
+
+.hp-wrap {
+	display: none;
+}
+
+
+
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+footer {
+  padding: 30px 0;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}

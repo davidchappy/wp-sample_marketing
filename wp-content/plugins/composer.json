@@ -1,0 +1,5 @@
+{
+    "require": {
+        "bostondv/bootstrap-ninja-forms": "^1.1"
+    }
+}
