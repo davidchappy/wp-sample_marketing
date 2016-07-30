@@ -7,7 +7,7 @@
   		<div class="col-sm-8 col-sm-push-2 col-lg-6 col-lg-push-3">
   			<h2><?php the_field('footer_heading'); ?></h2>
   			<p><?php the_field('call_to_action_text'); ?></p>
-			<p><a type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#contactForm"><?php the_field('call_to_action_button'); ?></a></p>
+			<p><a type="button" id="#call-to-action-button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#contactForm"><?php the_field('call_to_action_button'); ?></a></p>
 		</div>
 	</div> 
 

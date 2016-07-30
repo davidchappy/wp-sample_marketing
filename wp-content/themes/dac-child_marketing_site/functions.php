@@ -33,3 +33,14 @@ function remove_menus(){
 }
 add_action( 'admin_menu', 'remove_menus' );
 ?>
+<?php // Allows BS modal to be triggered by nav item
+add_filter( 'nav_menu_link_attributes', 'dac_menu_item_data_toggle', 10, 2 );
+function dac_menu_item_data_toggle( $atts, $item ) {
+  // Manipulate attributes
+  if ( 183 == $item -> ID ) {
+    $atts['data-toggle'] = 'modal';
+    $atts['data-target'] = '#contactForm';
+  }
+  return $atts;
+}
+?>
