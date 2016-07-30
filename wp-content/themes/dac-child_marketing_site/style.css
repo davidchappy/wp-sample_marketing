@@ -128,6 +128,12 @@ body {
   letter-spacing: 2px;
 }
 
+@media (max-width: 992px) {
+  .navbar-inverse .navbar-brand {
+    font-size: 1.3em;
+  }
+}
+
 .current-menu-item > a, 
 .current-menu-parent > a {
 	background: #C75C04;
@@ -215,6 +221,13 @@ body {
 		padding-right: 5rem;
 		padding-left: 5rem;
 	}
+}
+
+@media (max-width: 450px) {
+  .main-content .col-md-4 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
 }
 
 .main-content .col-md-4 img {
@@ -638,6 +651,15 @@ body {
 		margin-bottom: 180px !important;
 	}
 }
+@media (max-width: 375px) {
+  .timeline > li {
+    margin-bottom: 220px !important;
+  }
+  .timeline > li:last-of-type {
+    margin-bottom: 250px !important;
+  }
+}
+
 
 /*** Services ***/
 .services-page.jumbotron {
@@ -709,6 +731,15 @@ blockquote {
   }
   .testimonials {
     margin-top: 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  blockquote {
+    font-size: 1.2em;
+  }
+  .testimonials {
+    padding-top: 1rem;
   }
 }
 

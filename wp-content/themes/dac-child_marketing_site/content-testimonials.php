@@ -14,7 +14,7 @@
   ?>
 
   <div class="row testimonials">
-    <div class="col-xs-10 col-xs-push-1 col-md-8 col-md-push-2 col-lg-6 col-lg-push-3">
+    <div class="col-sm-10 col-sm-push-1 col-md-8 col-md-push-2 col-lg-6 col-lg-push-3">
       <blockquote>
         <?php the_field('testimonial_text'); ?>
         <p class="citation"><?php the_field('testimonial_citation'); ?><br/><span><?php the_field('testimonial_citation_secondary'); ?></span></p>
