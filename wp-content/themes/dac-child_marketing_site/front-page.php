@@ -13,7 +13,6 @@
   $feature_3_image = get_field('feature_3_image');
   ?>
 
-
   <div class="jumbotron" style="background: url('<?php echo $hero_image; ?>') no-repeat center center">
     <div class="container">
       <h1><?php the_field('hero_title'); ?></h1>
@@ -26,7 +25,7 @@
     </div>
     <!-- enable the arrow below if content is long -->
     <span id="down-arrow" class="glyphicon glyphicon-chevron-down"></span>
-    <div class="my-tooltip light-tooltip "><p>Hi, I'm David Chapman, <a href="portfolio.dachapman.com">a web developer</a>. Welcome to my sample marketing site, which I've built to give potential clients or employers an example of my work. This site is built on Wordpress and is from the ground up (using my own custom theme) with the site owner's ease of editing in mind. For example, this banner's background image as well as all of the text on it are easily editable via the "Home" page in Wordpress. Thanks for stopping by!</p><br />
+    <div class="my-tooltip light-tooltip "><p>Hi, I'm David Chapman, <a href="portfolio.dachapman.com">a web developer</a>. Welcome to my sample marketing site, which I've built to give potential clients or employers an example of my work. This site is built on Wordpress with the site owner's ease of editing in mind. For example, this banner's background image as well as all of the text on it are easily editable via the "Home" page in Wordpress. Thanks for stopping by!</p><br />
     <p>(If these tooltips are annoying, just click the red minus button on the right side of the screen!)</p><span class="glyphicon glyphicon-remove close-my-tooltip"></span></div>
   </div>
 

@@ -918,7 +918,6 @@ blockquote::before {
 }
 
 .my-tooltip {
-
   position: absolute;
   padding: 1em 2em;
   text-shadow: none;
