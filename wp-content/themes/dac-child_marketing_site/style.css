@@ -240,7 +240,13 @@ body {
 }
 
 .featurette:last-of-type {
-	margin-bottom: 50px;
+	margin-bottom: 100px;
+}
+
+@media (min-width: 350px) {
+  .featurette:last-of-type {
+    margin-bottom: 50px;
+  }
 }
 
 @media (min-width: 991px) {
@@ -251,12 +257,19 @@ body {
 
 
 .featurette-divider {
-  	margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  	margin: 50px 0; /* Space out the Bootstrap <hr> more */
+}
+
+@media (min-width: 768px) {
+  .featurette-divider {
+    margin: 80px 0;
+  }
 }
 
 .featurette-divider:first-of-type {
 	margin-top: 0;
 }
+
 
 /* Thin out the marketing headings */
 .featurette-heading {
