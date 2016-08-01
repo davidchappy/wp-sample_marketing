@@ -5,11 +5,12 @@ jQuery(document).ready(function ( $ ) {
 	    scrollTop: $('#main-content').offset().top - $('.jumbotron').offset().top
   	}, 1000);
   });
+  $(function() {
+		$('.my-tooltip').hide();
+		$('.turn-on-tooltips').hide();
+	});
   $(window).ready(function($) {
-	  $(function() {
-			$('.my-tooltip').hide();
-			$('.turn-on-tooltips').hide();
-		});
+
 		$(function() {
 			$('.my-tooltip').fadeIn(1000);
 		});

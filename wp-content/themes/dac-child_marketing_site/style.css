@@ -918,7 +918,7 @@ blockquote::before {
 }
 
 .my-tooltip {
-  display: block;
+
   position: absolute;
   padding: 1em 2em;
   text-shadow: none;
@@ -928,6 +928,7 @@ blockquote::before {
   top: 15px;
   left: 15px;
   width: 45%;
+  display: none
 }
 
 @media (max-width: 544px) {
