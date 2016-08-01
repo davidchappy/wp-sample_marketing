@@ -13,9 +13,12 @@
 
 <?php if( $query->current_post % 2 == 0 ) : ?>
 
+  
+
   <hr class="featurette-divider">
 
   <div class="row featurette">
+    <div class="my-tooltip dark-tooltip"><p>These 'featurettes' are optional content highlighting areas, unlimited in number, and will alternate left/right for each new one created.</p><br /><span class="glyphicon glyphicon-remove close-my-tooltip"></span></div>
     <div class="col-lg-5">
       <img class="featurette-image img-responsive center-block" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']?>">
     </div>

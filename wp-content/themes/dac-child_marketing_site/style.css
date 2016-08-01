@@ -18,6 +18,8 @@ orange: #DE8A10
 alternate orange:  #C75C04
 gray: #3D464D
 light gray: #9B9B9B
+green (tooltip): #417505
+red (tooltip): #D0021B
 */
 
 /*** Global Styles ***/
@@ -32,6 +34,10 @@ body {
     padding-top: 49px;   
     padding-bottom: 0px;
     font-family: 'Libre Franklin', 'Open Sans', sans-serif;
+}
+
+a {
+  color: #DE8A10; 
 }
 
 @media screen and (max-width: 782px) {
@@ -184,7 +190,7 @@ body {
     color: #fff;
 }
 
-.jumbotron span.glyphicon {
+.jumbotron span.glyphicon-chevron-down {
     height: 40px;
     width: 40px;
     font-size: 3em;
@@ -202,6 +208,10 @@ body {
 .main-content {
     padding-top: 5rem;
     margin-bottom: 550px;
+}
+
+.main-content .row {
+    position: relative;
 }
 
 .main-content .col-md-4 {
@@ -857,4 +867,111 @@ blockquote::before {
 
 .footer p {
     margin: 0;
+}
+
+
+/*** Tooltips ***/
+
+.tooltip-buttons {
+  position: fixed;
+  right: 0;
+  top: 30vh;
+  z-index: 1001;
+}
+
+.turn-on-tooltips,
+.turn-off-tooltips {
+  color: #fff;
+  font-size: .8em;
+  position: absolute;
+  right: 0;
+  padding: 0 2em 0 .5em;
+  border-radius: 5px;
+  transition: .2s ease-out;
+  text-transform: uppercase;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  box-shadow: 0px 0px 1px #3D464D;
+  width: 170px;
+  margin-right: -145px;
+  cursor: pointer;
+}
+
+.turn-on-tooltips {
+  background: rgba(65,117,5,.9);
+}
+
+.turn-off-tooltips {
+  background: rgba(208,2,27,.9);
+  top: 45px;
+}
+
+.turn-on-tooltips span:first-of-type,
+.turn-off-tooltips span:first-of-type {
+  margin-right: 10px;
+}
+
+.turn-on-tooltips:hover,
+.turn-off-tooltips:hover {
+  margin-right: -5px;
+}
+
+.my-tooltip {
+  display: block;
+  position: absolute;
+  padding: 1em 2em;
+  text-shadow: none;
+  border-radius: 5px;
+  line-height: 1.6;
+  z-index: 1005;
+  top: 15px;
+  left: 15px;
+  width: 45%;
+}
+
+.light-tooltip {
+  background: rgba(255,255,255,.9);
+  color: #9B9B9B;
+  border: 2px solid #9B9B9B;
+}
+
+.dark-tooltip {
+  background: rgba(61,70,77,.9);
+  color: #fff;
+  border: 2px solid #9B9B9B;
+}
+
+.my-tooltip p {
+  font-size: 1em !important;
+  margin-bottom: 0;
+}
+
+.close-my-tooltip {
+  position: absolute;
+  display: block;
+  font-size: 1.4em;
+  top: 10px;
+  right: 10px;
+  color: #9B9B9B;
+  cursor: pointer;
+}
+
+/* Specific Tooltips */
+
+.jumbotron .my-tooltip {
+  top: 15px;
+  left: 10%;
+  width: 80%;
+}
+
+.services-intro .my-tooltip {
+  top: 450px;
+}
+
+.featurette .my-tooltip,
+.testimonials .my-tooltip {
+  top: 15px;
+  left: 55%;
+  text-align: right;
 }

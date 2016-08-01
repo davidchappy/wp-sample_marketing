@@ -13,7 +13,7 @@
 <?php $post_counter++; ?>
 
 <?php $image = get_field('timeline_item_image'); ?>
-
+  
   <li <?php if( $query->current_post % 2 !== 0 ) : ?>class="timeline-inverted"<?php endif; ?>>
     <div class="timeline-image">
       <img class="img-circle img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">

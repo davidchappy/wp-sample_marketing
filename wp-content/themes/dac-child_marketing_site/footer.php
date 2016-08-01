@@ -43,5 +43,9 @@
 	  </div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
 
+	<div class="tooltip-buttons">
+		<div class="turn-on-tooltips"><span class="glyphicon glyphicon-plus"></span>Show all tooltips</div>
+		<div class="turn-off-tooltips"><span class="glyphicon glyphicon-minus"></span>Hide all tooltips</div>
+	</div>
   </body>
 </html>

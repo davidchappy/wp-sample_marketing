@@ -17,6 +17,7 @@
         <h1><?php the_field('services_intro_heading'); ?></h1>
         <p class="lead"><?php the_field('services_intro_text'); ?></p>
       </div>
+      <div class="my-tooltip dark-tooltip"><p>The site user can easily add or remove services here as desired (they'll alternate left/right).</p><br /><span class="glyphicon glyphicon-remove close-my-tooltip"></span></div>
     </div> 
 
     <?php get_template_part('content', 'services'); ?>

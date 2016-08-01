@@ -22,6 +22,7 @@
     <!-- Timeline, adapted from http://bootsnipp.com/snippets/featured/zigzag-timeline-layout -->
     <div class="container timeline-container">
       <div class="row">
+        <div class="my-tooltip dark-tooltip"><p>The site user can add to or remove from this responsive timeline.</p><br /><span class="glyphicon glyphicon-remove close-my-tooltip"></span></div>
         <div class="col-lg-12">
           <h3 class="text-center"><?php the_field('timeline_heading');?></h3>
           <p class="timeline-intro"><?php the_field('timeline_intro_text');?></p>

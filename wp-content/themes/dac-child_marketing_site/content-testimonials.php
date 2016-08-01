@@ -14,6 +14,7 @@
   ?>
 
   <div class="row testimonials">
+    <div class="my-tooltip dark-tooltip"><p>The site user can easily add or remove services here as desired (they'll alternate left/right).</p><br /><span class="glyphicon glyphicon-remove close-my-tooltip"></span></div>
     <div class="col-sm-10 col-sm-push-1 col-md-8 col-md-push-2 col-lg-6 col-lg-push-3">
       <blockquote>
         <?php the_field('testimonial_text'); ?>
